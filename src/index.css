@@ -1,0 +1,333 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.mainContainerStartPage {
+  background: url("./assets/4kStartPageBackground.jpg") no-repeat center
+    center/cover;
+  background-position: center -270px;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -270px;
+}
+
+.headingStartPage {
+  padding-top: 70px;
+}
+
+.welcome {
+  font-size: 58px;
+}
+
+.matchMania {
+  font-size: 140px;
+  text-shadow: 15px 10px 20px black;
+  margin-left: -138px;
+  position: absolute;
+}
+
+.startButton {
+  margin-top: 300px;
+  width: 530px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 88px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 70px;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  cursor: pointer;
+}
+
+.startButton:active {
+  color: white;
+  font-size: 65px;
+  transform: scale(0.98);
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.mainContainer {
+  background: url("./assets/DigitalWavesGameBackground.jpg") no-repeat center
+    center/cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin-top: -270px;
+}
+
+.secondaryContainer {
+  align-items: center;
+  width: 900px;
+  height: 959px;
+  /* border: 1px solid white; */
+  line-height: 0;
+  /* THIS IS WHERE THE BORDER AROUND THE GAME IS! */
+}
+
+.title {
+  margin-left: 145px;
+  text-align: center;
+  width: 550px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 80px;
+  color: white;
+  padding: 30px;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: normal;
+}
+
+.mainHeader {
+  margin-left: 30px;
+  text-align: center;
+  width: 770px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 30px;
+  color: white;
+  padding: 30px;
+  font-family: monospace;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: normal;
+}
+
+.helpBtn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: -840px;
+}
+
+.helpBtn:hover {
+  background-color: #555;
+}
+
+.helpBtn:active {
+  background-color: #222;
+}
+
+.helpBtnOn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  background-color: white;
+  color: rgb(0, 255, 0);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: -840px;
+}
+
+.helpBtnOn:hover {
+  background-color: rgb(180, 179, 179);
+}
+
+.restartBtn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: -840px;
+  margin-right: 750px;
+}
+
+.restartBtn:hover {
+  background-color: #555;
+}
+
+.restartBtn:active {
+  background-color: #222;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  background: url("./assets/BackOfCardSimpleRedWhite.png") no-repeat center
+    center/cover;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+}
+
+.tile:hover {
+  transform: scale(0.96);
+}
+
+main {
+  width: 500px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 270px;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin-left: -3px;
+  margin-top: -3px;
+  vertical-align: bottom;
+  line-height: 0;
+}
+
+.isMatched {
+  margin-bottom: -62px;
+}
+
+.isMatched:hover {
+  transform: scale(1);
+}
+
+.mainResultsContainer {
+  align-items: center;
+  margin-left: -50px;
+  height: 600px;
+  width: 600px;
+}
+
+.h1 {
+  float: right;
+  margin-right: 235px;
+  margin-top: 35px;
+  margin-bottom: -100px;
+  color: white;
+  text-decoration: underline;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.resultsBox {
+  background: rgba(255, 255, 255, 0.2);
+  width: 300px;
+  height: 330px;
+  margin-left: 105px;
+  margin-top: 130px;
+  border-radius: 10px;
+  padding-left: 90px;
+  padding-right: 0px;
+}
+
+.youMadeText {
+  color: white;
+  font-size: 40px;
+  float: right;
+  padding-right: 110px;
+  margin-top: 140px;
+  text-align: center;
+}
+
+.numberOfTriesText {
+  color: white;
+  font-size: 50px;
+  float: right;
+  font-weight: bold;
+  margin-right: -115px;
+  margin-top: 190px;
+  text-align: center;
+}
+
+.mistakesText {
+  color: white;
+  font-size: 40px;
+  float: right;
+  margin-right: -167px;
+  margin-top: 240px;
+  text-align: center;
+}
+
+.mainHighscoreContainer {
+  position: absolute;
+  right: 60px;
+  top: 170px;
+  width: 400px;
+  max-height: 770px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.mainHighscoreContainer header {
+  color: white;
+  padding-top: 20px;
+}
+
+.highscoreFormPage {
+ position: absolute;
+ bottom: 250px;
+ left: 700px;
+}
+
+.highscoreFormPage label {
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.showHighscoresBtn {
+  position: absolute;
+  top: 20px;
+  left: 765px;
+  padding: 6px;
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.showHighscoresBtn:hover {
+  background: white;
+  color: black;
+  transform: scale(0.9);
+  border: none;
+}
+
+.score {
+  margin-top: 15px;
+  color: white;
+  padding: 15px;
+}

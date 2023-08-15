@@ -1,0 +1,19 @@
+{
+  "highscores": [
+    {
+      "name": "Nathaniel Lane",
+      "numOfTries": 39,
+      "id": 1
+    },
+    {
+      "name": "Mackenzie Ballard",
+      "numOfTries": 17,
+      "id": 2
+    },
+    {
+      "name": "Jacinda Canning",
+      "numOfTries": 23,
+      "id": 3
+    }
+  ]
+}
